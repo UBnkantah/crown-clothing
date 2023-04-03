@@ -1,7 +1,4 @@
-import SignIn from "./routes/Authentication/AuthenticationComponent";
-import SignUpForm from "./routes/SignUpForm/SignUpFormComponent";
 import Home from "./routes/home/HomeComponent"
-import NavigationComponent from "./routes/Navigation/NavigationComponent";
 import Authentication from "./routes/Authentication/AuthenticationComponent";
 import SharedLayout from "./routes/SharedLayout/SharedLayout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

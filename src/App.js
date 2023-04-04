@@ -2,10 +2,7 @@ import Home from "./routes/home/HomeComponent"
 import Authentication from "./routes/Authentication/AuthenticationComponent";
 import SharedLayout from "./routes/SharedLayout/SharedLayout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-const Shop = () => {
-  return <h1>This is the Shop Page</h1>
-}
+import ShopComponent from "./routes/Shop/ShopComponent";
 
 
 function App() {
@@ -15,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />} >
           <Route index element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop" element={<ShopComponent />} />
           <Route path="/auth" element={<Authentication />} />
         </Route>
       </Routes>

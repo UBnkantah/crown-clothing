@@ -23,6 +23,10 @@ const SignInForm = () => {
     setFormFields(defaultFormFields)
   }
 
+  const SignWithGoogle = async () => {
+    await signInWithGooglePopup();  
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -53,11 +57,7 @@ const SignInForm = () => {
 
     setFormFields({...formFields, [name]: value});
   };
-  const SignWithGoogle = async () => {
-    const response = await signInWithGooglePopup();
-     await createUserDocumentFromAuth(response.user)
-   
-}
+  
 
   return (
     <div className='sign-up-container'>

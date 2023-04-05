@@ -8,3 +8,9 @@
     height: 100%;
     object-fit: contain;
 }
+.add-to-cart-btn{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    
+}

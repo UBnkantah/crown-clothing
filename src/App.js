@@ -3,7 +3,7 @@ import Authentication from "./routes/Authentication/AuthenticationComponent";
 import SharedLayout from "./routes/SharedLayout/SharedLayout";
 import { Routes, Route } from "react-router-dom";
 import ShopComponent from "./routes/Shop/ShopComponent";
-
+import Checkout from "./routes/checkout/Checkout";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/shop" element={<ShopComponent />} />
           <Route path="/auth" element={<Authentication />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </>

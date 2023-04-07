@@ -1,7 +1,7 @@
 import {useState, useContext} from 'react'
 
 import FormInput from '../../components/form-input/FormInputComponent';
-
+import { BUTTON_TYPE_CLASSES } from '../../components/Button/Button';
 import { UserContext } from '../../context/UserContext';
 
 import { signInWithGooglePopup, signInAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils';
@@ -82,7 +82,7 @@ const SignInForm = () => {
         />
         <div className="button-contain">
           <button type="submit">Sign In</button>
-          <button type='button' onClick={SignWithGoogle}>Sign In with Google</button>
+          <button buttonType={BUTTON_TYPE_CLASSES.google} type='button' onClick={SignWithGoogle}>Sign In with Google</button>
         </div>
       </form>
     </div>

@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />} >
           <Route index element={<Home />} />
-          <Route path="/shop" element={<ShopComponent />} />
+          <Route path="/shop/*" element={<ShopComponent />} />
           <Route path="/auth" element={<Authentication />} />
           <Route path="/checkout" element={<Checkout />} />
         </Route>

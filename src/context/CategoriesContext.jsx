@@ -5,7 +5,7 @@ import { addCollectionAndDocuments, getCategoriesAndDocuments } from "../utils/f
 import { SHOP_DATA } from "../shop-data";
 
 export const CategoriesContext = createContext({
-    categoriesMap: [],
+    categoriesMap: {},
 });
 
 

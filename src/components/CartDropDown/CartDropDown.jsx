@@ -1,12 +1,15 @@
 import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
+import { CategoriesContext } from "../../context/CategoriesContext"
 import {CartDropDownContainer, EmptyMessage, CartItems} from "./CartDropDown.styles.jsx"
 import Button from "../Button/Button"
 import CartItem from "../CartItem/CartItem"
 
 const CartDropDown = () => {
   const navigate = useNavigate();
+  const {categoriesMap} = useContext(CategoriesContext)
+  console.log(categoriesMap)
   const { cartItems } = useContext(CartContext)
  
   const goToCheckoutHandler = () => {

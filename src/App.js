@@ -1,7 +1,6 @@
 import { useEffect,} from "react";
 import { useDispatch } from "react-redux";
-import { CreateAction } from "../utils/reducer/Reducer.utils";
-import { onAuthStateChangedListener, createUserDocumentFromAuth } from "../utils/firebase/firebase.utils";
+import { onAuthStateChangedListener, createUserDocumentFromAuth } from "../src/utils/firebase/firebase.utils";
 import Home from "./routes/home/HomeComponent"
 import Authentication from "./routes/Authentication/AuthenticationComponent";
 import SharedLayout from "./routes/SharedLayout/SharedLayout";

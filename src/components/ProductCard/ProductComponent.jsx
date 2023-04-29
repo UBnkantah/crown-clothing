@@ -24,3 +24,5 @@ const ProductCard = ({product}) => {
 }
 
 export default ProductCard
+
+// updated the head
